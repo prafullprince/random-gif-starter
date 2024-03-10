@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* css background-image generated using https://10015.io/tools/css-background-pattern-generator */
+.background {
+  background-image: radial-gradient(#ffffff 2.5px, transparent 2.5px), radial-gradient(#ffffff 2.5px, transparent 2.5px);
+  background-size: 36px 36px;
+  background-position: 0 0, 18px 18px;
+  background-color: #b1d2ff;
+}
+
+
+/* css loader generated using https://10015.io/tools/css-loader-generator */
+.spinner {
+   margin: 40px;
+   width: 11.2px;
+   height: 11.2px;
+   animation: spinner-z355kx 1s infinite linear;
+   border-radius: 11.2px;
+   box-shadow: 28px 0px 0 0 #fff, 17.4px 21.8px 0 0 #fff, -6.2px 27.2px 0 0 #fff, -25.2px 12px 0 0 #fff, -25.2px -12px 0 0 #fff, -6.2px -27.2px 0 0 #fff, 17.4px -21.8px 0 0 #fff;
+}
+
+@keyframes spinner-z355kx {
+   to {
+      transform: rotate(360deg);
+   }
+}
+
+.spinner {
+   width: 48px;
+   height: 48px;
+   border-radius: 50%;
+   position: relative;
+   animation: rotate 1s linear infinite
+ }
+ .spinner::before {
+   content: "";
+   box-sizing: border-box;
+   position: absolute;
+   inset: 0px;
+   border-radius: 50%;
+   border: 5px solid #FFF;
+   animation: prixClipFix 2s linear infinite ;
+ }
+
+ @keyframes rotate {
+   100%   {transform: rotate(360deg)}
+ }
+
+ @keyframes prixClipFix {
+     0%   {clip-path:polygon(50% 50%,0 0,0 0,0 0,0 0,0 0)}
+     25%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 0,100% 0,100% 0)}
+     50%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,100% 100%,100% 100%)}
+     75%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0 100%,0 100%)}
+     100% {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0 100%,0 0)}
+ }
